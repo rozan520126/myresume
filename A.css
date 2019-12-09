@@ -1,0 +1,286 @@
+body{background-image:url( ' pic/bg.jpg ' );
+background-size: cover,100%;　//設定背景圖片的填滿方式
+/*background-repeat:no-repeat;*/　//背景圖片不要重覆顯示（僅顯示一次）
+background-attachment:fixed;　//背景圖片位置固定
+font-family:微軟正黑體;
+}
+.title{color: #465C8B;
+}
+/*底框架及頂端*/
+.bg{height: 100%;
+margin:30px 100px;
+background-color: white;}
+
+/*基本資料*/
+.head{
+	background-color#EFD9C1;}
+
+.picme{height: 250px;
+width: 300px;
+}
+.div-b{ position:absolute;
+	width:180px;
+	height:100%;
+	margin-left:251px;
+	background-color:white;}
+
+.me1{margin-top:50px;
+float:left;
+color: #465C8B;}
+.me2{margin-top:60px;
+	margin-left:230px;
+float:left;
+  border-radius: 4px;
+  background-color:#88BBD6;
+  border:none;
+  color:#465C8B;;
+  font-size: 13px;
+  padding: 5px;
+  height:40px;
+  width: 90px;
+  transition: all 0.5s;
+  cursor: pointer;}
+
+
+.me2 span {
+  cursor :pointer;
+  display:inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.me2 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.me2:hover span {
+  padding-right: 25px;
+}
+
+.me2:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.me3{margin-bottom:30px;
+	 width:305px;
+	 font-size: 15px;
+	font-family:微軟正黑體;
+color #465C8B;}
+.me4{width:470px;
+	font-family:微軟正黑體;
+	color: #465C8B;
+	}
+
+/*經歷*/
+.ex{background-color#99CED4;}
+.button1{background-color:#D0DAE4;
+  padding: 15px;
+  width: 420px;
+  border:none ;
+  text-align: left;
+  font-size: 18px;
+	color: #465C8B;
+  }
+.button2{width: 420px;
+color: #6D7993;
+font-family:微軟正黑體;
+	}
+
+.picex{height: 150px;
+width: 215px;}
+
+.s2A{float: left;
+	margin-right:30px;
+}
+.s2B{float: left;
+}
+
+/*聯絡我*/
+.ct1{font-size:30px;}
+
+/*課程專案*/
+.s3A{float:left;
+	background-color:#D0DAE4;
+padding:10px;
+border-radius:5px;
+color: #465C8B;
+	font-family:微軟正黑體;}
+
+.imgnew {
+  position: relative;
+  width: 100%;
+}
+
+.climage {
+  opacity: 1;
+  display: block;
+  width: 10%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.clnew {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.imgnew:hover .climage {
+  opacity: 0.3;
+}
+
+.imgnew:hover .clnew {
+  opacity: 1;
+}
+
+.text {
+  font-family:微軟正黑體;
+  font-style:bold;
+  color: black;
+  font-size: 15px;
+ 
+}
+
+/*skill的可怕多!*/
+.s1{background-color:#D0DAE4 ;}
+.skill{
+  width: 90%;
+}
+@keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-webkit-keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-moz-keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-o-keyframes load{
+  from {
+    width: 0%
+  }
+}
+
+.bar{
+  background-color: #EEE;
+  padding: 2px;
+  height: 25px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #FFF;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+.bar::before{
+  height: 20px;
+  content:  attr(data-skill);
+  background-color: #a6cfe3;
+  display: inline-block;
+  padding: 5px 0 5px 10px;
+  border-radius: inherit;
+  animation: load 2s 0s;
+  -webkit-animation: load 2s 0s;
+  -moz-animation: load 2s 0s;
+  -o-animation: load 2s 0s;
+}
+
+.bar.front::before{
+  background-color: #ffcc33;
+}
+.bar.back::before{
+  background-color: #a6cfe3;
+}
+
+.bar.C::before{
+  width: calc(50% - 10px);
+}
+.bar.JAVA::before{
+  width: calc(60% - 10px);
+}
+.bar.HTML::before{
+  width: calc(65% - 10px);
+}
+.bar.CSS::before{
+  width: calc(75% - 10px);
+}
+.bar.JAVASCRIPT::before{
+  width: calc(60% - 10px);
+}
+/*card照片縮放*/
+.inner{
+    overflow: hidden;
+}
+ 
+.inner img{
+    transition: all 1.5s ease;
+}
+ 
+.inner:hover img{
+    transform: scale(1.5);
+}
+
+
+
+/* 個人照翻轉*/
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height:250px;
+  perspective: 1000px;
+  margin-left:80px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility:hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: black;
+  transform: rotateY(180deg);
+}
