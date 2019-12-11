@@ -19,9 +19,9 @@ background-color: white;}
 width: 300px;
 }
 .div-b{ position:absolute;
-	width:180px;
+	width:190px;
 	height:100%;
-	margin-left:251px;
+	margin-left:270px;
 	background-color:white;}
 
 .me1{margin-top:50px;
@@ -31,9 +31,9 @@ color: #465C8B;}
 	margin-left:230px;
 float:left;
   border-radius: 4px;
-  background-color:#88BBD6;
+  background-color:#ADBED2;
   border:none;
-  color:#465C8B;;
+  color:white;
   font-size: 13px;
   padding: 5px;
   height:40px;
@@ -85,9 +85,12 @@ color #465C8B;}
   text-align: left;
   font-size: 18px;
 	color: #465C8B;
+transition: 0.3s;
   }
+.button1:hover {background-color:#ADBED2;
+color :white;
+ font-weight:bold;}
 .button2{width: 420px;
-color: #6D7993;
 font-family:微軟正黑體;
 	}
 
@@ -105,7 +108,7 @@ width: 215px;}
 
 /*課程專案*/
 .s3A{float:left;
-	background-color:#D0DAE4;
+	background-color#D0DAE4;
 padding:10px;
 border-radius:5px;
 color: #465C8B;
@@ -148,9 +151,12 @@ color: #465C8B;
   font-family:微軟正黑體;
   font-style:bold;
   color: black;
-  font-size: 15px;
- 
+  font-size: 16px;
 }
+.card-title{color: #465C8B;
+font-weight:bold;}
+.card-text{font-size:16px;
+font-family:微軟正黑體;}
 
 /*skill的可怕多!*/
 .s1{background-color:#D0DAE4 ;}
